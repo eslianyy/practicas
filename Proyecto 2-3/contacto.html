@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulario de registro</title>
+</head>
+
+<body>
+  <header>
+    <h1>Formulario de registro</h1>
+  </header>
+  <section>
+    <form action="Submit" method="post">
+      <label for="name">Nombre completo:</label>
+      <input type="text" placeholder="Juana Saltitopa" id="name" name="name" required>
+      <br>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" placeholder="juana12@hotmail.com" id="email" name="email" required>
+      <br>
+
+      <label for="telephone">Teléfono</label>
+      <input type="tel" placeholder="8098880000" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+      <br>
+
+      <label for="event">Seleccione un evento:</label>
+      <select name="event" id="event">
+        <option value="charla">Charla</option>
+        <option value="taller">Taller</option>
+        <option value="networking">Networking</option>
+      </select>
+
+      <label for="como">¿Cómo se enteró del evento?</label>
+      <select name="opciones" id="Opciones">
+        <option value="redes sociales">Redes sociales</option>
+        <option value="amigo">Amigo</option>
+        <option value="página web">Página web</option>
+        <option value="otros">Otros</option>
+      </select>
+      <br>
+
+      <label for="comments">Comentarios:</label>
+      <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      <br>
+
+      <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
